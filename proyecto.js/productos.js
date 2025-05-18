@@ -75,7 +75,7 @@ const btnSiguiente = document.getElementById("siguiente");
 let paginaActual = 1;
 const productosPorPagina = 15;
 
-// Función para mostrar productos con manejo forzado de Base64
+// Función para mostrar productos
 function mostrarProductos() {
   container.innerHTML = "";
 
@@ -97,15 +97,11 @@ function mostrarProductos() {
     const defaultImage =
       "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5Ij5TaW4gaW1hZ2VuPC90ZXh0Pjwvc3ZnPg==";
 
-    // Forzar tratamiento como Base64
     let imagenSrc = defaultImage;
     if (producto.imagen) {
-      // Si ya es Base64, usarla directamente
       if (producto.imagen.startsWith("data:image")) {
         imagenSrc = producto.imagen;
-      }
-      // Si es una URL, intentar cargarla con fallback a Base64
-      else {
+      } else {
         imagenSrc = producto.imagen;
       }
     }

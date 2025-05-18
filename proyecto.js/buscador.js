@@ -1,7 +1,7 @@
 // --- PASO 1: Insertar productos en localStorage si no existen ---
 if (!localStorage.getItem("productos")) {
   const productosIniciales = [
-    // EQUIPOS
+    // EQUIPO
     { nombre: "Mancuerna de manos", categoria: "equipo", precio: 150000, codigo: "EQ001", imagen: "https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" },
     { nombre: "Colchoneta de yoga", categoria: "equipo", precio: 85000, codigo: "EQ002", imagen: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" },
     { nombre: "Banda elástica de resistencia", categoria: "equipo", precio: 60000, codigo: "EQ003", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
@@ -71,13 +71,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadingElement = document.getElementById("loading");
   const resultsElement = document.getElementById("results");
 
-  // Función que simula buscar productos
   function buscarProductos(filtros) {
     return new Promise((resolve) => {
       setTimeout(() => {
         const productos = JSON.parse(localStorage.getItem("productos")) || [];
         const resultados = productos.filter((producto) => {
-          // Filtro por nombre
           if (
             filtros.nombre &&
             !producto.nombre
@@ -86,11 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
           ) {
             return false;
           }
-          // Filtro por categoría
           if (filtros.categoria && producto.categoria !== filtros.categoria) {
             return false;
           }
-          // Filtro por precio mínimo
           if (
             filtros.precioMin &&
             parseFloat(producto.precio) < parseFloat(filtros.precioMin)
@@ -100,11 +96,10 @@ document.addEventListener("DOMContentLoaded", function () {
           return true;
         });
         resolve(resultados);
-      }, 2000); // 2 segundos para simular demora
+      }, 2000);
     });
   }
 
-  // Función para mostrar los resultados
   function mostrarResultados(productos) {
     if (productos.length === 0) {
       resultsElement.innerHTML =
@@ -120,28 +115,27 @@ document.addEventListener("DOMContentLoaded", function () {
       const imagenSrc = producto.imagen || defaultImage;
 
       html += `
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="${imagenSrc}" 
-                             alt="${producto.nombre}" 
-                             class="product-img"
-                             onerror="this.src='${defaultImage}'">
-                    </div>
-                    <div class="product-info">
-                        <h3>${producto.nombre}</h3>
-                        <p><strong>Categoría:</strong> ${producto.categoria}</p>
-                        <p><strong>Código:</strong> ${producto.codigo}</p>
-                        <p><strong>Precio:</strong> $${producto.precio}</p>
-                    </div>
-                </div>
-            `;
+        <div class="product-card">
+          <div class="product-img-container">
+            <img src="${imagenSrc}" 
+                 alt="${producto.nombre}" 
+                 class="product-img"
+                 onerror="this.src='${defaultImage}'">
+          </div>
+          <div class="product-info">
+            <h3>${producto.nombre}</h3>
+            <p><strong>Categoría:</strong> ${producto.categoria}</p>
+            <p><strong>Código:</strong> ${producto.codigo}</p>
+            <p><strong>Precio:</strong> $${producto.precio}</p>
+          </div>
+        </div>
+      `;
     });
 
     html += "</div>";
     resultsElement.innerHTML = html;
   }
 
-  // Evento para buscar productos
   buscarBtn.addEventListener("click", function () {
     const filtros = {
       nombre: document.getElementById("nombre").value,
@@ -149,7 +143,6 @@ document.addEventListener("DOMContentLoaded", function () {
       precioMin: document.getElementById("precio-min").value,
     };
 
-    // Mostrar spinner de carga
     loadingElement.style.display = "block";
     resultsElement.innerHTML = "";
 
@@ -163,11 +156,10 @@ document.addEventListener("DOMContentLoaded", function () {
           "<p>Ocurrió un error al buscar los productos.</p>";
       })
       .finally(() => {
-        loadingElement.style.display = "none"; // Siempre ocultar loading
+        loadingElement.style.display = "none";
       });
   });
 
-  // Evento para limpiar filtros
   limpiarBtn.addEventListener("click", function () {
     document.getElementById("nombre").value = "";
     document.getElementById("categoria").value = "";
