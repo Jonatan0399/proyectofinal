@@ -14,16 +14,16 @@ if (!localStorage.getItem("productos")) {
     { nombre: "Soporte para barras", categoria: "equipo", precio: 250000, codigo: "EQ010", imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_714189-MPE70806556634_082023-T-soporte-de-mancuernas-rack-para-pesas-alta-resistencia-black.webp" },
 
     // SUPLEMENTOS
-    { nombre: "Proteína Whey", categoria: "suplemento", precio: 120000, codigo: "SUP001", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Creatina Monohidratada", categoria: "suplemento", precio: 95000, codigo: "SUP002", imagen: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "BCAA 2:1:1", categoria: "suplemento", precio: 78000, codigo: "SUP003", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Pre-entrenamiento explosivo", categoria: "suplemento", precio: 89000, codigo: "SUP004", imagen: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Glutamina en polvo", categoria: "suplemento", precio: 72000, codigo: "SUP005", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Multivitamínico deportivo", categoria: "suplemento", precio: 65000, codigo: "SUP006", imagen: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Proteína vegana", categoria: "suplemento", precio: 110000, codigo: "SUP007", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Omega 3 alta concentración", categoria: "suplemento", precio: 58000, codigo: "SUP008", imagen: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Caseína nocturna", categoria: "suplemento", precio: 99000, codigo: "SUP009", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Gainer hipercalórico", categoria: "suplemento", precio: 135000, codigo: "SUP010", imagen: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" },
+    { nombre: "Proteína Whey", categoria: "suplemento", precio: 120000, codigo: "SUP001", imagen: "https://www.optimumnutrition.com.co/wp-content/uploads/2023/08/gold-standard-5-lb-french-vanilla-800x800.jpg" },
+    { nombre: "Creatina Monohidratada", categoria: "suplemento", precio: 95000, codigo: "SUP002", imagen: "https://fitnesspeople.com.co/cdn/shop/products/0006042_creatina-monohidrato-dragon-pharma-300gr.jpg?v=1695262790" },
+    { nombre: "BCAA 2:1:1", categoria: "suplemento", precio: 78000, codigo: "SUP003", imagen: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/bup/bup03234/y/8.jpg" },
+    { nombre: "Pre-entrenamiento explosivo", categoria: "suplemento", precio: 89000, codigo: "SUP004", imagen: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sst/sst71742/l/8.jpg" },
+    { nombre: "Glutamina en polvo", categoria: "suplemento", precio: 72000, codigo: "SUP005", imagen: "https://locatelcolombia.vtexassets.com/arquivos/ids/231442/19962797767_1_L-GLUTAMINE-POLVO-6000MG-X-240G.jpg?v=637376782153400000" },
+    { nombre: "Multivitamínico deportivo", categoria: "suplemento", precio: 65000, codigo: "SUP006", imagen: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/msc/msc61017/y/24.jpg" },
+    { nombre: "Proteína vegana", categoria: "suplemento", precio: 110000, codigo: "SUP007", imagen: "https://www.elmanjar.com.co/wp-content/uploads/2020/02/nutramerican-proteina-polvo-arveja-el-manjar-vegano.jpg" },
+    { nombre: "Omega 3 alta concentración", categoria: "suplemento", precio: 58000, codigo: "SUP008", imagen: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sol/sol02058/y/116.jpg" },
+    { nombre: "Caseína nocturna", categoria: "suplemento", precio: 99000, codigo: "SUP009", imagen: "https://m.media-amazon.com/images/I/71s1H5xDoBL.jpg" },
+    { nombre: "Gainer hipercalórico", categoria: "suplemento", precio: 135000, codigo: "SUP010", imagen: "https://media.falabella.com/falabellaCO/125134469_03/w=800,h=800,fit=pad" },
 
     // MEMBRESÍAS
     { nombre: "Membresía Premium", categoria: "membresia", precio: 300000, codigo: "MEM001", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
