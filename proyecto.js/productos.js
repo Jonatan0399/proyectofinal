@@ -2,16 +2,16 @@
 if (!localStorage.getItem("productos")) {
   const productosIniciales = [
     // EQUIPO
-    { nombre: "Mancuerna de manos", categoria: "equipo", precio: 150000, codigo: "EQ001", imagen: "https://https://m.media-amazon.com/images/I/51uDw4CSLtL._AC_UF1000,1000_QL80_.jpg" },
-    { nombre: "Colchoneta de yoga", categoria: "equipo", precio: 85000, codigo: "EQ002", imagen: "https://m.media-amazon.com/images/I/61V-74tQFfL._AC_SL1500_.jpg" },
-    { nombre: "Banda elástica de resistencia", categoria: "equipo", precio: 60000, codigo: "EQ003", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Rueda abdominal", categoria: "equipo", precio: 70000, codigo: "EQ004", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Balón medicinal 5kg", categoria: "equipo", precio: 130000, codigo: "EQ005", imagen: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Comba profesional", categoria: "equipo", precio: 45000, codigo: "EQ006", imagen: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Disco olímpico 10kg", categoria: "equipo", precio: 120000, codigo: "EQ007", imagen: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Kettlebell 8kg", categoria: "equipo", precio: 110000, codigo: "EQ008", imagen: "https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Banco para pesas ajustable", categoria: "equipo", precio: 300000, codigo: "EQ009", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Soporte para barras", categoria: "equipo", precio: 250000, codigo: "EQ010", imagen: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" },
+    { nombre: "Mancuerna de manos", categoria: "equipo", precio: 150000, codigo: "EQ001", imagen: "https://m.media-amazon.com/images/I/61V-74tQFfL._AC_SL1500_.jpg" },
+    { nombre: "Colchoneta de yoga", categoria: "equipo", precio: 85000, codigo: "EQ002", imagen: "https://sportfitness.co/cdn/shop/products/38159-1.png?v=1649444812" },
+    { nombre: "Banda elástica de resistencia", categoria: "equipo", precio: 60000, codigo: "EQ003", imagen: "https://sportfitness.co/cdn/shop/collections/set-de-bandas-elasticas-x5-sportfitness.jpg?v=1670008040" },
+    { nombre: "Rueda abdominal", categoria: "equipo", precio: 70000, codigo: "EQ004", imagen: "https://walmartgt.vtexassets.com/arquivos/ids/467397/Rueda-de-Ejercicio-Atheltic-Works-1-42042.jpg?v=638419041971230000" },
+    { nombre: "Balón medicinal 5kg", categoria: "equipo", precio: 130000, codigo: "EQ005", imagen: "https://realfitnessperu.com/wp-content/uploads/2023/08/4.webp" },
+    { nombre: "Comba profesional", categoria: "equipo", precio: 45000, codigo: "EQ006", imagen: "https://lh3.googleusercontent.com/proxy/AMYxriGmWLCRby88E1h2XUlAKNvRfORHXrxhIeTbywlqa1mlSZYal9KttxucHLpfNH4spyK6r5kBCyZuMw0JXxGtDkcawxmRT5TAUlRXarauGm9EJ7sGYmKQSgI" },
+    { nombre: "Disco olímpico 10kg", categoria: "equipo", precio: 120000, codigo: "EQ007", imagen: "https://fckfit.com/cdn/shop/files/10kg_03f09954-9e02-437c-baf3-871fc2b29bfa_1024x1024.png?v=1743101296" },
+    { nombre: "Kettlebell 8kg", categoria: "equipo", precio: 110000, codigo: "EQ008", imagen: "https://cdn11.bigcommerce.com/s-p89g8w2tc9/products/333/images/1314/Kettlebell-Pesa-Rusa-8-kg-1__92760.1705499695.1280.1280.jpg?c=1" },
+    { nombre: "Banco para pesas ajustable", categoria: "equipo", precio: 300000, codigo: "EQ009", imagen: "https://m.media-amazon.com/images/I/41VJcZfnjiL._AC_UF1000,1000_QL80_.jpg" },
+    { nombre: "Soporte para barras", categoria: "equipo", precio: 250000, codigo: "EQ010", imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_714189-MPE70806556634_082023-T-soporte-de-mancuernas-rack-para-pesas-alta-resistencia-black.webp" },
 
     // SUPLEMENTOS
     { nombre: "Proteína Whey", categoria: "suplemento", precio: 120000, codigo: "SUP001", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
