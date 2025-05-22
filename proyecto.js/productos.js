@@ -26,16 +26,16 @@ if (!localStorage.getItem("productos")) {
     { nombre: "Gainer hipercalórico", categoria: "suplemento", precio: 135000, codigo: "SUP010", imagen: "https://media.falabella.com/falabellaCO/125134469_03/w=800,h=800,fit=pad" },
 
     // MEMBRESÍAS
-    { nombre: "Membresía Premium", categoria: "membresia", precio: 300000, codigo: "MEM001", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Básica", categoria: "membresia", precio: 150000, codigo: "MEM002", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Estándar", categoria: "membresia", precio: 200000, codigo: "MEM003", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Familiar", categoria: "membresia", precio: 450000, codigo: "MEM004", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía VIP", categoria: "membresia", precio: 500000, codigo: "MEM005", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Estudiantil", categoria: "membresia", precio: 120000, codigo: "MEM006", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Corporativa", categoria: "membresia", precio: 600000, codigo: "MEM007", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Mensual", categoria: "membresia", precio: 50000, codigo: "MEM008", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Trimestral", categoria: "membresia", precio: 135000, codigo: "MEM009", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Membresía Semestral", categoria: "membresia", precio: 250000, codigo: "MEM010", imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" },
+    { nombre: "Membresía Premium", categoria: "membresia", precio: 300000, codigo: "MEM001", imagen: "https://construyendofutbol.com/wp-content/uploads/2023/11/Carteles-Home-2.0-1-1024x577.webp" },
+    { nombre: "Membresía Básica", categoria: "membresia", precio: 150000, codigo: "MEM002", imagen: "https://dev.poseidon.gopass.com.co/images/development/trnsvalet/ea1df742-5461-4efc-8fbc-da14455ad604" },
+    { nombre: "Membresía Estándar", categoria: "membresia", precio: 200000, codigo: "MEM003", imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjl7Xjcf5HH132xXvnNcKW-8bnjKWcg9OuIA&s" },
+    { nombre: "Membresía Familiar", categoria: "membresia", precio: 450000, codigo: "MEM004", imagen: "https://st3.depositphotos.com/9880800/15051/i/450/depositphotos_150513064-stock-photo-happy-family-exercising-with-dumbbells.jpg" },
+    { nombre: "Membresía VIP", categoria: "membresia", precio: 500000, codigo: "MEM005", imagen: "https://us.123rf.com/450wm/mrhighsky/mrhighsky1601/mrhighsky160100075/51334828-membres%C3%ADa-vip-insignia-de-oro.jpg" },
+    { nombre: "Membresía Estudiantil", categoria: "membresia", precio: 120000, codigo: "MEM006", imagen: "https://bodytech.imgix.net/landing/67ad27726a50a.jpg" },
+    { nombre: "Membresía Corporativa", categoria: "membresia", precio: 600000, codigo: "MEM007", imagen: "https://media.istockphoto.com/id/512543272/es/foto/hombre-sosteniendo-una-pesa.jpg?s=612x612&w=0&k=20&c=xpZjCTs0O8qKpkmdVrG-StfMB7OGiiZyjABmwItUCSc=" },
+    { nombre: "Membresía Mensual", categoria: "membresia", precio: 50000, codigo: "MEM008", imagen: "https://gymstart.co/wp-content/uploads/2024/04/plan-mensual.jpg" },
+    { nombre: "Membresía Trimestral", categoria: "membresia", precio: 135000, codigo: "MEM009", imagen: "https://bodytech.imgix.net/landing/67ad2849e0efb.jpg" },
+    { nombre: "Membresía Semestral", categoria: "membresia", precio: 250000, codigo: "MEM010", imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZlur0O4Hzix4Cvkxo698QorfkKMxDl7231Q&s" },
 
     // ROPA
     { nombre: "Camiseta deportiva", categoria: "ropa", precio: 50000, codigo: "ROP001", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
