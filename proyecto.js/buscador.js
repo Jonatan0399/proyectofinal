@@ -1,17 +1,7 @@
 // --- PASO 1: Insertar productos en localStorage si no existen ---
 if (!localStorage.getItem("productos")) {
   const productosIniciales = [
-    // EQUIPO
-    { nombre: "Mancuerna de manos", categoria: "equipo", precio: 150000, codigo: "EQ001", imagen: "https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Colchoneta de yoga", categoria: "equipo", precio: 85000, codigo: "EQ002", imagen: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Banda elástica de resistencia", categoria: "equipo", precio: 60000, codigo: "EQ003", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Rueda abdominal", categoria: "equipo", precio: 70000, codigo: "EQ004", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Balón medicinal 5kg", categoria: "equipo", precio: 130000, codigo: "EQ005", imagen: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Comba profesional", categoria: "equipo", precio: 45000, codigo: "EQ006", imagen: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Disco olímpico 10kg", categoria: "equipo", precio: 120000, codigo: "EQ007", imagen: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Kettlebell 8kg", categoria: "equipo", precio: 110000, codigo: "EQ008", imagen: "https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Banco para pesas ajustable", categoria: "equipo", precio: 300000, codigo: "EQ009", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Soporte para barras", categoria: "equipo", precio: 250000, codigo: "EQ010", imagen: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" },
+   
 
     // SUPLEMENTOS
     { nombre: "Proteína Whey", categoria: "suplemento", precio: 120000, codigo: "SUP001", imagen: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
