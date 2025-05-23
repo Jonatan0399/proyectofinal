@@ -50,7 +50,7 @@ if (!localStorage.getItem("productos")) {
     { nombre: "Camiseta sin mangas", categoria: "ropa", precio: 45000, codigo: "ROP010", imagen: "https://media.training-fit-es.es/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/a/d/adidas_ic6945_9_apparel_zip_-_turntable_3d-8_white.jpg" },
 
     // ACCESORIOS
-    { nombre: "Cinturón de pesas", categoria: "accesorios", precio: 80000, codigo: "ACC001", imagen: "https://ssrsportoficial.com.mx/cdn/shop/products/VACIO-2022-10-06T205636.401.png?v=1665107841&width=1445" },
+    { nombre: "Cinturón de pesas", categoria: "accesorios", precio: 80000, codigo: "ACC001", imagen: "https://m.media-amazon.com/images/I/91+ELSOw-qL._AC_SL1500_.jpg" },
     { nombre: "Muñequeras deportivas", categoria: "accesorios", precio: 35000, codigo: "ACC002", imagen: "https://ssrsportoficial.com.mx/cdn/shop/products/VACIO-2022-10-06T205636.401.png?v=1665107841&width=1445" },
     { nombre: "Rodilleras de compresión", categoria: "accesorios", precio: 65000, codigo: "ACC003", imagen: "https://www.thundra.co/wp-content/uploads/2021/02/rodillera-1-1.jpg" },
     { nombre: "Correa de levantamiento", categoria: "accesorios", precio: 40000, codigo: "ACC004", imagen: "https://http2.mlstatic.com/D_NQ_NP_788114-MLU74844145204_032024-O.webp" },
