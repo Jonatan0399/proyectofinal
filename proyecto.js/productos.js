@@ -27,7 +27,7 @@ if (!localStorage.getItem("productos")) {
 
     // MEMBRESÍAS
     { nombre: "Membresía Premium", categoria: "membresia", precio: 300000, codigo: "MEM001", imagen: "https://construyendofutbol.com/wp-content/uploads/2023/11/Carteles-Home-2.0-1-1024x577.webp" },
-    { nombre: "Membresía Básica", categoria: "membresia", precio: 150000, codigo: "MEM002", imagen: "https://dev.poseidon.gopass.com.co/images/development/trnsvalet/ea1df742-5461-4efc-8fbc-da14455ad604" },
+    { nombre: "Membresía Básica", categoria: "membresia", precio: 150000, codigo: "MEM002", imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkSgGq-kV16fpO2PP8t18rGxsHDu2oOlDmOQ&s" },
     { nombre: "Membresía Estándar", categoria: "membresia", precio: 200000, codigo: "MEM003", imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjl7Xjcf5HH132xXvnNcKW-8bnjKWcg9OuIA&s" },
     { nombre: "Membresía Familiar", categoria: "membresia", precio: 450000, codigo: "MEM004", imagen: "https://st3.depositphotos.com/9880800/15051/i/450/depositphotos_150513064-stock-photo-happy-family-exercising-with-dumbbells.jpg" },
     { nombre: "Membresía VIP", categoria: "membresia", precio: 500000, codigo: "MEM005", imagen: "https://us.123rf.com/450wm/mrhighsky/mrhighsky1601/mrhighsky160100075/51334828-membres%C3%ADa-vip-insignia-de-oro.jpg" },
@@ -38,16 +38,16 @@ if (!localStorage.getItem("productos")) {
     { nombre: "Membresía Semestral", categoria: "membresia", precio: 250000, codigo: "MEM010", imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZlur0O4Hzix4Cvkxo698QorfkKMxDl7231Q&s" },
 
     // ROPA
-    { nombre: "Camiseta deportiva", categoria: "ropa", precio: 50000, codigo: "ROP001", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Pantaloneta de entrenamiento", categoria: "ropa", precio: 60000, codigo: "ROP002", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Sudadera deportiva", categoria: "ropa", precio: 120000, codigo: "ROP003", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Chaqueta impermeable fitness", categoria: "ropa", precio: 180000, codigo: "ROP004", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Top deportivo para mujer", categoria: "ropa", precio: 70000, codigo: "ROP005", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Leggings de compresión", categoria: "ropa", precio: 85000, codigo: "ROP006", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Guantes de gimnasio", categoria: "ropa", precio: 40000, codigo: "ROP007", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Calcetas deportivas antideslizantes", categoria: "ropa", precio: 25000, codigo: "ROP008", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Gorra deportiva ajustable", categoria: "ropa", precio: 30000, codigo: "ROP009", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Camiseta sin mangas", categoria: "ropa", precio: 45000, codigo: "ROP010", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
+    { nombre: "Camiseta deportiva", categoria: "ropa", precio: 50000, codigo: "ROP001", imagen: "https://vivimar.com.co/wp-content/uploads/2024/08/117-01-camiseta-deportiva-adidas.webp" },
+    { nombre: "Pantaloneta de entrenamiento", categoria: "ropa", precio: 60000, codigo: "ROP002", imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9lRuR0LNp17KlGlwdlcP_53k6aulIK22CMg&s" },
+    { nombre: "Sudadera deportiva", categoria: "ropa", precio: 120000, codigo: "ROP003", imagen: "https://tiendasuniversalstreet.com/wp-content/uploads/2023/11/53008201-1-2.webp" },
+    { nombre: "Chaqueta impermeable fitness", categoria: "ropa", precio: 180000, codigo: "ROP004", imagen: "https://contents.mediadecathlon.com/p1800875/k$d2dd03ff68657f71d8f293a097903a30/chaqueta-impermeable-de-senderismo-montana-mh150-hombre.jpg" },
+    { nombre: "Top deportivo para mujer", categoria: "ropa", precio: 70000, codigo: "ROP005", imagen: "https://surtidoradepartamental.vteximg.com.br/arquivos/ids/549248/070000046614_1.jpg?v=638479008707200000" },
+    { nombre: "Leggings de compresión", categoria: "ropa", precio: 85000, codigo: "ROP006", imagen: "https://media.falabella.com/falabellaCO/121567952_01/w=800,h=800,fit=pad" },
+    { nombre: "Guantes de gimnasio", categoria: "ropa", precio: 40000, codigo: "ROP007", imagen: "https://wargosports.com/cdn/shop/files/guantes_para_gym_clasic.jpg?v=1726090173" },
+    { nombre: "Calcetas deportivas antideslizantes", categoria: "ropa", precio: 25000, codigo: "ROP008", imagen: "https://www.arequipe.com.co/cdn/shop/files/ANTIDESLIZANTES-BLANCAS-FLECHAS-1.jpg?v=1737475697" },
+    { nombre: "Gorra deportiva ajustable", categoria: "ropa", precio: 30000, codigo: "ROP009", imagen: "https://http2.mlstatic.com/D_NQ_NP_643056-MCO77093500275_062024-O.webp" },
+    { nombre: "Camiseta sin mangas", categoria: "ropa", precio: 45000, codigo: "ROP010", imagen: "https://media.training-fit-es.es/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/a/d/adidas_ic6945_9_apparel_zip_-_turntable_3d-8_white.jpg" },
 
     // ACCESORIOS
     { nombre: "Cinturón de pesas", categoria: "accesorios", precio: 80000, codigo: "ACC001", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
