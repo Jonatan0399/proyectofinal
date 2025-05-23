@@ -50,16 +50,16 @@ if (!localStorage.getItem("productos")) {
     { nombre: "Camiseta sin mangas", categoria: "ropa", precio: 45000, codigo: "ROP010", imagen: "https://media.training-fit-es.es/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/a/d/adidas_ic6945_9_apparel_zip_-_turntable_3d-8_white.jpg" },
 
     // ACCESORIOS
-    { nombre: "Cinturón de pesas", categoria: "accesorios", precio: 80000, codigo: "ACC001", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Muñequeras deportivas", categoria: "accesorios", precio: 35000, codigo: "ACC002", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Rodilleras de compresión", categoria: "accesorios", precio: 65000, codigo: "ACC003", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Correa de levantamiento", categoria: "accesorios", precio: 40000, codigo: "ACC004", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Toalla deportiva", categoria: "accesorios", precio: 25000, codigo: "ACC005", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Bolso de gimnasio", categoria: "accesorios", precio: 95000, codigo: "ACC006", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Botella de agua deportiva", categoria: "accesorios", precio: 30000, codigo: "ACC007", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Protector bucal para deportes", categoria: "accesorios", precio: 20000, codigo: "ACC008", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Cuerda para estiramiento", categoria: "accesorios", precio: 28000, codigo: "ACC009", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
-    { nombre: "Tobilleras con peso", categoria: "accesorios", precio: 50000, codigo: "ACC010", imagen: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" }
+    { nombre: "Cinturón de pesas", categoria: "accesorios", precio: 80000, codigo: "ACC001", imagen: "https://ssrsportoficial.com.mx/cdn/shop/products/VACIO-2022-10-06T205636.401.png?v=1665107841&width=1445" },
+    { nombre: "Muñequeras deportivas", categoria: "accesorios", precio: 35000, codigo: "ACC002", imagen: "https://ssrsportoficial.com.mx/cdn/shop/products/VACIO-2022-10-06T205636.401.png?v=1665107841&width=1445" },
+    { nombre: "Rodilleras de compresión", categoria: "accesorios", precio: 65000, codigo: "ACC003", imagen: "https://www.thundra.co/wp-content/uploads/2021/02/rodillera-1-1.jpg" },
+    { nombre: "Correa de levantamiento", categoria: "accesorios", precio: 40000, codigo: "ACC004", imagen: "https://http2.mlstatic.com/D_NQ_NP_788114-MLU74844145204_032024-O.webp" },
+    { nombre: "Toalla deportiva", categoria: "accesorios", precio: 25000, codigo: "ACC005", imagen: "https://static-content-1.boomfit.com/23975-home_default/toalla-deportiva-negra-boomfit.jpg" },
+    { nombre: "Bolso de gimnasio", categoria: "accesorios", precio: 95000, codigo: "ACC006", imagen: "https://tienda.clubdeportivotenerife.es/675-thickbox_default/bolso-de-gimnasio-pequeno.jpg" },
+    { nombre: "Botella de agua deportiva", categoria: "accesorios", precio: 30000, codigo: "ACC007", imagen: "https://sportfitness.co/cdn/shop/files/807531_22_1080x.jpg?v=1723568724" },
+    { nombre: "Protector bucal para deportes", categoria: "accesorios", precio: 20000, codigo: "ACC008", imagen: "https://www.ortodonciagonzalezdelrio.com/wp-content/uploads/2019/11/protector-dental.jpg" },
+    { nombre: "Cuerda para estiramiento", categoria: "accesorios", precio: 28000, codigo: "ACC009", imagen: "https://i5.walmartimages.com/asr/b34c6391-e67c-41cc-aca6-098bf1c9e5e4.79f21d36378666b255dccde63a1f1d69.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" },
+    { nombre: "Tobilleras con peso", categoria: "accesorios", precio: 50000, codigo: "ACC010", imagen: "https://www.suples.cl/images/productos/par_pesas_tobilleras_1kg_greatlhete_650x650.webp" }
   ];
   localStorage.setItem("productos", JSON.stringify(productosIniciales));
 }
