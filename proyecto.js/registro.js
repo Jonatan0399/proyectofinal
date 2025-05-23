@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const formRegistro = document.getElementById("formRegistro");
   const registrarBtn = document.getElementById("registrarBtn");
+  const limpiarBtn = document.getElementById("limpiarBtn");
 
   // Inicializar array de productos si no existe
   let productos = JSON.parse(localStorage.getItem("productos")) || [];
@@ -70,7 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
       categoria,
       imagen,
       codigo,
-      precio,
+      // Guardar el precio formateado en pesos
+      precio: `$${precio.toLocaleString("es-CO")}`,
       cantidad,
       descripcion,
       fechaRegistro: new Date().toISOString(),
@@ -88,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
   });
 
-  // Opcional: Agregar validación en tiempo real
+  //  Agregar validación en tiempo real
   document.getElementById("codigo").addEventListener("input", function () {
     if (this.value.length > 0 && !validarCodigo(this.value)) {
       this.setCustomValidity(
@@ -97,5 +99,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       this.setCustomValidity("");
     }
+  });
+
+  // Botón limpiar
+  limpiarBtn.addEventListener("click", function () {
+    formRegistro.reset();
   });
 });

@@ -16,10 +16,10 @@
     </p>
     <main class="container">
       <form id="formRegistro">
-        <label>Nombre:</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" maxlength="20" required />
 
-        <label>Categoría:</label>
+        <label for="categoria">Categoría:</label>
         <select id="categoria" required>
           <option value="" disabled selected>Seleccione una categoría</option>
           <option value="equipo">Equipo</option>
@@ -29,36 +29,36 @@
           <option value="accesorios">Accesorios</option>
         </select>
 
-        <label>Imagen (seleccione imagen):</label>
+        <label for="imagen">Imagen (seleccione imagen):</label>
         <select id="imagen" required>
           <option value="" disabled selected>Seleccione una imagen</option>
-          <option value="imagen1.jpg">imagen1.jpg</option>
-          <option value="imagen2.jpg">imagen2.jpg</option>
-          <option value="imagen3.jpg">imagen3.jpg</option>
-          <option value="imagen4.jpg">imagen4.jpg</option>
-          <option value="imagen5.jpg">imagen5.jpg</option>
-          <option value="imagen6.jpg">imagen6.jpg</option>
-          <option value="imagen7.jpg">imagen7.jpg</option>
-          <option value="imagen8.jpg">imagen8.jpg</option>
-          <option value="imagen9.jpg">imagen9.jpg</option>
-          <option value="imagen10.jpg">imagen10.jpg</option>
+          <option value="proteina_vegana.jpg">proteina vegana.jpg</option>
+          <option value="Multivitamínico_deportivo.jpg">Multivitamínico deportivo.jpg</option>
+          <option value="Membresía_Mensual.jpg">Membresía Mensual.jpg</option>
+          <option value="Membresía_Trimestral">Membresía Trimestral</option>
+          <option value="Membresía_Semestral.jpg">Membresía Semestral.jpg</option>
+          <option value="Membresía_VIP.jpg">Membresía VIP.jpg</option>
+          <option value="Membresía_Básica.jpg">Membresía Básica.jpg</option>
+          <option value="Membresía_Estándar.jpg">Membresía Estándar.jpg</option>
+          <option value="Membresía_Familiar">Membresía Familiar.jpg</option>
+          <option value="Creatina_Monohidratada.jpg">Creatina Monohidratada.jpg</option>
         </select>
 
-        <label>Código:</label>
+        <label for="codigo">Código:</label>
         <input type="text" id="codigo" required />
 
-        <label>Precio ($):</label>
-        <input type="number" id="precio" min="0" step="0.01" required />
+        <label for="precio">Precio ($):</label>
+        <input type="number" id="precio" min="1" step="0.01" required placeholder="Ej: 10000" />
 
-        <label>Cantidad:</label>
+        <label for="cantidad">Cantidad:</label>
         <input type="number" id="cantidad" min="0" />
 
-        <label>Descripción:</label>
+        <label for="descripcion">Descripción:</label>
         <textarea id="descripcion"></textarea>
 
         <div class="buttons">
           <button type="submit" id="registrarBtn">Registrar</button>
-          <button type="reset">Limpiar</button>
+          <button type="button" id="limpiarBtn">Limpiar</button>
         </div>
       </form>
 
