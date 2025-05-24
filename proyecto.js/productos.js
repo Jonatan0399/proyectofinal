@@ -133,11 +133,13 @@ function mostrarProductos() {
   actualizarBotones();
 }
 
+// Actualiza el estado de los botones de paginación
 function actualizarBotones() {
   btnAnterior.disabled = paginaActual === 1;
   btnSiguiente.disabled = paginaActual * productosPorPagina >= productos.length;
 }
 
+// Ir a la siguiente página
 function siguientePagina() {
   if (paginaActual * productosPorPagina < productos.length) {
     paginaActual++;
@@ -145,6 +147,7 @@ function siguientePagina() {
   }
 }
 
+// Ir a la página anterior
 function anteriorPagina() {
   if (paginaActual > 1) {
     paginaActual--;
@@ -152,9 +155,9 @@ function anteriorPagina() {
   }
 }
 
-// Event listeners
+// Event listeners para paginación
 btnAnterior.addEventListener("click", anteriorPagina);
 btnSiguiente.addEventListener("click", siguientePagina);
 
-// Inicialización
+// Inicialización automática al cargar la página
 document.addEventListener("DOMContentLoaded", mostrarProductos);
