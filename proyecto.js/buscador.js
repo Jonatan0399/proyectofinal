@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadingElement = document.getElementById("loading");
   const resultsElement = document.getElementById("results");
 
-  // Simula la obtención de productos filtrados con una promesa y retardo de 2 segundos
   function buscarProductos(filtros) {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -34,29 +33,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Muestra los resultados en pantalla
   function mostrarResultados(productos) {
     if (productos.length === 0) {
       resultsElement.innerHTML =
-        "<p>No se encontraron productos con los filtros seleccionados.</p>";
+        "<p style='text-align:center;'>No se encontraron productos con los filtros seleccionados.</p>";
       return;
     }
 
-    let html = '<div class="product-grid">';
+    let html = '<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">';
     productos.forEach((producto) => {
       const defaultImage =
         "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5Ij5TaW4gaW1hZ2VuPC90ZXh0Pjwvc3ZnPg==";
       const imagenSrc = producto.imagen || defaultImage;
 
       html += `
-        <div class="product-card">
-          <div class="product-img-container">
+        <div style="border:1px solid #ccc;padding:10px;width:200px;">
+          <div style="height:120px;display:flex;align-items:center;justify-content:center;">
             <img src="${imagenSrc}" 
                  alt="${producto.nombre}" 
-                 class="product-img"
+                 style="max-width:100%;max-height:100px;"
                  onerror="this.src='${defaultImage}'">
           </div>
-          <div class="product-info">
+          <div>
             <h3>${producto.nombre}</h3>
             <p><strong>Categoría:</strong> ${producto.categoria}</p>
             <p><strong>Código:</strong> ${producto.codigo}</p>
@@ -70,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
     resultsElement.innerHTML = html;
   }
 
-  // Evento para buscar productos
   buscarBtn.addEventListener("click", function () {
     const filtros = {
       nombre: document.getElementById("nombre").value,
@@ -95,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
-  // Evento para limpiar filtros y resultados
   limpiarBtn.addEventListener("click", function () {
     document.getElementById("nombre").value = "";
     document.getElementById("categoria").value = "";
