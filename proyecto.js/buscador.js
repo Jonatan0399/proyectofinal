@@ -1,18 +1,10 @@
-// --- PASO 1: Insertar productos en localStorage si no existen ---
-if (!localStorage.getItem("productos")) {
-  const productosIniciales = [
-
-  ];
-  localStorage.setItem("productos", JSON.stringify(productosIniciales));
-}
-
-// --- PASO 2: Lógica del buscador ---
 document.addEventListener("DOMContentLoaded", function () {
   const buscarBtn = document.getElementById("buscar");
   const limpiarBtn = document.getElementById("limpiar");
   const loadingElement = document.getElementById("loading");
   const resultsElement = document.getElementById("results");
 
+  // Simula la obtención de productos filtrados con una promesa y retardo de 2 segundos
   function buscarProductos(filtros) {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -42,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Muestra los resultados en pantalla
   function mostrarResultados(productos) {
     if (productos.length === 0) {
       resultsElement.innerHTML =
@@ -50,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let html = '<div class="product-grid">';
-
     productos.forEach((producto) => {
       const defaultImage =
         "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5Ij5TaW4gaW1hZ2VuPC90ZXh0Pjwvc3ZnPg==";
@@ -78,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     resultsElement.innerHTML = html;
   }
 
+  // Evento para buscar productos
   buscarBtn.addEventListener("click", function () {
     const filtros = {
       nombre: document.getElementById("nombre").value,
@@ -102,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
+  // Evento para limpiar filtros y resultados
   limpiarBtn.addEventListener("click", function () {
     document.getElementById("nombre").value = "";
     document.getElementById("categoria").value = "";

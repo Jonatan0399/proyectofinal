@@ -35,16 +35,13 @@
         </div>
 
         <div class="buttons">
-          <button class="search-btn" id="buscar">Buscar</button>
-          <button class="clear-btn" id="limpiar">Limpiar</button>
-          <button class="back-btn" onclick="location.href='productos.html'">
-            Volver
-          </button>
+          <button class="search-btn" id="buscar" type="button">Buscar</button>
+          <button class="clear-btn" id="limpiar" type="button">Limpiar</button>
+          <button class="back-btn" type="button" onclick="location.href='productos.html'">Volver</button>
         </div>
       </div>
 
-      <div class="loading" id="loading" style="display: none">
-        <div class="spinner"></div>
+      <div class="loading" id="loading">
         <p id="loading-text">Buscando productos, por favor espera...</p>
       </div>
 
@@ -53,6 +50,6 @@
       </div>
     </main>
 
-    <script type="module" src="/proyecto.js/buscador.js"></script>
+    <script src="proyecto.js/buscador.js"></script>
   </body>
 </html>
