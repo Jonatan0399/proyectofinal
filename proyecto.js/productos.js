@@ -133,6 +133,13 @@ function mostrarProductos() {
   actualizarBotones();
 }
 
+// eliminar producto
+function eliminarProducto(codigo) {
+  const productosActualizados = productos.filter(p => p.codigo !== codigo);
+  localStorage.setItem("productos", JSON.stringify(productosActualizados));
+  location.reload(); // Recarga la página para actualizar la vista
+}
+
 // Actualiza el estado de los botones de paginación
 function actualizarBotones() {
   btnAnterior.disabled = paginaActual === 1;
