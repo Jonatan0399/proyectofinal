@@ -92,6 +92,7 @@ function mostrarProductos() {
   productosPagina.forEach((producto) => {
     const card = document.createElement("div");
     card.className = "product-card";
+    card.style.position = "relative"; // Para el botón eliminar
 
     // Imagen por defecto en Base64 (SVG simple)
     const defaultImage =
@@ -125,7 +126,13 @@ function mostrarProductos() {
             : ""
         }
       </div>
+      <button class="btn-eliminar">Eliminar</button>
     `;
+
+    // Evento para eliminar producto
+    card.querySelector(".btn-eliminar").addEventListener("click", () => {
+      eliminarProducto(producto.codigo);
+    });
 
     container.appendChild(card);
   });
