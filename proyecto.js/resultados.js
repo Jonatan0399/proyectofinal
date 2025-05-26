@@ -18,16 +18,32 @@ const btnLimpiar = document.getElementById('btn-limpiar');
 document.addEventListener('DOMContentLoaded', () => {
   cargarResultados();
   mostrarResultados();
+  mostrarFiltrosAplicados();
 
   btnLimpiar.addEventListener('click', limpiarBusqueda);
   prevPageBtn.addEventListener('click', irPaginaAnterior);
   nextPageBtn.addEventListener('click', irPaginaSiguiente);
 });
 
+//Mostrar filtros aplicados
+function mostrarFiltrosAplicados() {
+  const filtros = JSON.parse(localStorage.getItem('filtrosBusqueda'));
+  const contenedor = document.getElementById('filtros-aplicados');
+  if (!filtros || (!filtros.nombre && !filtros.categoria && !filtros.precioMin)) {
+    contenedor.innerHTML = '';
+    return;
+  }
+  let html = '<div class="filtros-usados"><strong>Filtros aplicados:</strong><ul>';
+  if (filtros.nombre) html += `<li>Nombre: ${filtros.nombre}</li>`;
+  if (filtros.categoria) html += `<li>Categoría: ${filtros.categoria}</li>`;
+  if (filtros.precioMin) html += `<li>Precio mínimo: $${filtros.precioMin}</li>`;
+  html += '</ul></div>';
+  contenedor.innerHTML = html;
+}
+
 // Cargar resultados desde localStorage
 function cargarResultados() {
   const resultadosGuardados = localStorage.getItem('resultadosBusqueda');
-  
   if (resultadosGuardados) {
     resultados = JSON.parse(resultadosGuardados);
   } else {
@@ -64,13 +80,27 @@ function mostrarResultados() {
     const row = document.createElement('tr');
     const formattedPrice = formatCurrency(servicio.precio);
 
+    // Si la imagen es una URL completa, úsala. Si es solo el nombre, busca en img/
+    const defaultImage = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZWVlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM5OTkiPlNpbSBpbWFnZW48L3RleHQ+PC9zdmc+";
+    let imagenSrc = defaultImage;
+    if (servicio.imagen) {
+      if (servicio.imagen.startsWith('http') || servicio.imagen.startsWith('data:')) {
+        imagenSrc = servicio.imagen;
+      } else {
+        imagenSrc = `img/${servicio.imagen}`;
+      }
+    }
+
+    // Mostrar stock o cantidad, según el campo disponible
+    const stock = servicio.stock !== undefined ? servicio.stock : (servicio.cantidad !== undefined ? servicio.cantidad : 0);
+
     row.innerHTML = `
-      <td><img src="img/${servicio.imagen}" alt="${servicio.nombre}" onerror="this.src='img/placeholder.jpg'"></td>
+      <td><img src="${imagenSrc}" alt="${servicio.nombre}" onerror="this.src='${defaultImage}'" style="max-width:60px;max-height:60px;"></td>
       <td>${servicio.nombre}</td>
       <td>${servicio.categoria}</td>
-      <td>${servicio.precio}</td>
       <td>${servicio.codigo}</td>
-      <td>${servicio.stock}</td>
+      <td>${formattedPrice}</td>
+      <td>${stock}</td>
     `;
 
     resultadosBody.appendChild(row);
@@ -90,7 +120,6 @@ function actualizarControlesPaginacion() {
   prevPageBtn.disabled = currentPage === 1;
   nextPageBtn.disabled = currentPage === totalPages;
 
-
   // Añadir/quitar clase visual para botones deshabilitados
   if (prevPageBtn.disabled) {
     prevPageBtn.classList.add('disabled');
@@ -105,7 +134,6 @@ function actualizarControlesPaginacion() {
   }
 }
 
-
 // Ir a página anterior
 function irPaginaAnterior() {
   if (currentPage > 1) {
@@ -117,20 +145,18 @@ function irPaginaAnterior() {
 // Ir a página siguiente
 function irPaginaSiguiente() {
   const totalPages = Math.ceil(resultados.length / resultsPerPage);
-
   if (currentPage < totalPages) {
     currentPage++;
     mostrarResultados();
   }
 }
 
-// Limpiar búsqueda
 function limpiarBusqueda() {
   // eliminar resultados guardados
   localStorage.removeItem('resultadosBusqueda');
-
-  // Redirigir a la pagina de busqueda
-  window.location.href = 'busqueda.html';
+  localStorage.removeItem('filtrosBusqueda');
+  // Redirigir a la pagina de búsqueda correcta
+  window.location.href = 'buscador.html';
 }
 
 // Formatear número como moneda (COP)

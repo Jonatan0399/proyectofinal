@@ -9,11 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
         const productos = JSON.parse(localStorage.getItem("productos")) || [];
         const resultados = productos.filter((producto) => {
+          // Comparar nombre insensible a mayúsculas/minúsculas y espacios
           if (
             filtros.nombre &&
-            !producto.nombre
-              .toLowerCase()
-              .includes(filtros.nombre.toLowerCase())
+            !producto.nombre.trim().toLowerCase().includes(filtros.nombre.trim().toLowerCase())
           ) {
             return false;
           }
@@ -80,14 +79,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buscarProductos(filtros)
       .then((resultados) => {
-        mostrarResultados(resultados);
+        // Guardar resultados en localStorage
+        localStorage.setItem("resultadosBusqueda", JSON.stringify(resultados));
+        localStorage.setItem("filtrosBusqueda", JSON.stringify(filtros)); 
+        // Redirigir a la página de resultados
+        window.location.href = "resultados.html";
       })
       .catch((error) => {
         console.error("Error en la búsqueda:", error);
         resultsElement.innerHTML =
           "<p>Ocurrió un error al buscar los productos.</p>";
-      })
-      .finally(() => {
         loadingElement.style.display = "none";
       });
   });
