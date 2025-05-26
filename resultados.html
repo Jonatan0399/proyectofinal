@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerGym - Resultados de Búsqueda</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>PowerGym - Resultados de Búsqueda</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="registro.html">Registrar Servicio o producto</a>
+    <a href="buscador.html">Buscar Servicio o producto</a>
+  </nav>
+
+  <main class="container">
+    <div class="resultados-container">
+      <h2 class="results-title">Resultados de la Búsqueda</h2>
+      <p id="resumen-busqueda">Se encontraron <span id="total-resultados">0</span> servicios y productos que coinciden con su búsqueda.</p>
+
+      <div id="contenedor-tabla">
+        <table class="tabla-resultados" id="tabla-resultados">
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Código</th>
+              <th>Precio</th>
+              <th>stock</th>
+            </tr>
+          </thead>
+          <tbody id="resultados-body">
+            <!-- Los resultados se cargarán aquí -->
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <button id="prev-page" class="btn btn-secondary">Anterior</button>
+          <span class="page-info" id="page-info">Página 1</span>
+          <button id="next-page" class="btn">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="mensaje-no-resultados" class="mensaje-no-resultados" style="display: none;">
+        <h3>No se encontraron servicios que coincidan con los criterios de búsqueda.</h3>
+        <p>Intente con diferentes filtros.</p>
+      </div>
+
+      <div class="botones-container">
+        <button id="btn-limpiar" class="btn btn-secondary">Limpiar búsqueda</button>
+        <a href="buscador.html" class="btn">Volver a buscar</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>PowerGym &copy; 2025 - Proyecto Final Fundamentos Web</p>
+    </div>
+  </footer>
+
+  <script src="js/resultado.js"></script>
+</body>
+</html>
